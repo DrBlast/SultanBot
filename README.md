@@ -39,9 +39,10 @@ If you like my work, you can sponsor this project:
 
 <details>
    <summary>Donation options</summary>
-        [PayPal](https://www.paypal.com/paypalme/enichegovskiy)
-        <img src="https://github.com/DrBlast/SultanBot/blob/sultan/donate/Waves_QR.png" width = 130 alt="3PGrM7bxbNpxVYwanTDZbkggpztPTMkPAJ4">
-        <img src="https://github.com/DrBlast/SultanBot/blob/sultan/donate/Bitcoin_QR.png" width = 130 alt="bitcoin:19noFSCEni4gw1pSJKVohQaBsKHgVRXhDb">
-        <img src="https://github.com/DrBlast/SultanBot/blob/sultan/donate/Ethereum_QR.png" width = 130 alt="0x0e5d110f39a66D3e0BDa72294360a8034B35D05F">
+        <img src="https://github.com/DrBlast/SultanBot/blob/sultan/donate/PayPalMe.png" width = 150 alt="https://www.paypal.com/paypalme/enichegovskiy">
+        
+        <img src="https://github.com/DrBlast/SultanBot/blob/sultan/donate/Waves_QR.png" width = 150 alt="3PGrM7bxbNpxVYwanTDZbkggpztPTMkPAJ4">          
+        <img src="https://github.com/DrBlast/SultanBot/blob/sultan/donate/Bitcoin_QR.png" width = 150 alt="bitcoin:19noFSCEni4gw1pSJKVohQaBsKHgVRXhDb">         
+        <img src="https://github.com/DrBlast/SultanBot/blob/sultan/donate/Ethereum_QR.png" width = 150 alt="0x0e5d110f39a66D3e0BDa72294360a8034B35D05F">
 </details>
 
