@@ -16,7 +16,7 @@
 ## Flags:
 **Experience** - collect experience in Palace
 
-**Puzzles** - collect gun, wheel, go to guards regiment and make 6 walks and 6 visits in harem for twin accounts. May not work on new puzzles icon
+**Puzzles** - collect gun, wheel, go to guards regiment and make 6 walks, 6 visits in harem for twin accounts. May not work on new puzzles icon
 
 **Trip** - send heirs to trip in ministery
 
@@ -35,4 +35,12 @@ When script ends, bot collects daily bonuses
 
 
 ## Donate
-If this project helped you, you sponsor this project
+If you like my work, you can sponsor this project:
+
+[PayPal](https://www.paypal.com/paypalme/enichegovskiy)
+
+![](https://github.com/DrBlast/SultanBot/blob/sultan/donate/Waves_QR.png | width = 130)     
+![](https://github.com/DrBlast/SultanBot/blob/sultan/donate/Bitcoin_QR.png | width = 130)     
+![](https://github.com/DrBlast/SultanBot/blob/sultan/donate/Ethereum_QR.png | width = 130)
+
+
