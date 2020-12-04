@@ -47,20 +47,20 @@ If you like my work, you can sponsor this project:
         </details>
         <details>
                     <summary>Waves</summary>
-                        <a href="https://github.com/DrBlast/SultanBot/blob/sultan/donate/waves.txt">
-                        <img src="https://github.com/DrBlast/SultanBot/blob/sultan/donate/Waves_QR.png" width = 200>
+                        <a href="https://raw.githubusercontent.com/DrBlast/SultanBot/blob/sultan/donate/waves.txt">
+                        <img src="https://raw.githubusercontent.com/DrBlast/SultanBot/blob/sultan/donate/Waves_QR.png" width = 200>
                         </a><br/><b>3PGrM7bxbNpxVYwanTDZbkggpztPTMkPAJ4</b>
         </details>
         <details>
                     <summary>BTC</summary>
-                        <a href="https://github.com/DrBlast/SultanBot/blob/sultan/donate/eth.txt">
-                        <img src="https://github.com/DrBlast/SultanBot/blob/sultan/donate/Bitcoin_QR.png" width = 200>
+                        <a href="https://raw.githubusercontent.com/DrBlast/SultanBot/blob/sultan/donate/eth.txt">
+                        <img src="https://raw.githubusercontent.com/DrBlast/SultanBot/blob/sultan/donate/Bitcoin_QR.png" width = 200>
                         </a><br/><b>19noFSCEni4gw1pSJKVohQaBsKHgVRXhDb</b>
         </details>
         <details>
                     <summary>ETH</summary>
-                        <a href="https://github.com/DrBlast/SultanBot/blob/sultan/donate/eth.txt">
-                        <img src="https://github.com/DrBlast/SultanBot/blob/sultan/donate/Ethereum_QR.png" width = 200>
+                        <a href="https://raw.githubusercontent.com/DrBlast/SultanBot/sultan/donate/eth.txt">
+                        <img src="https://raw.githubusercontent.com/DrBlast/SultanBot/blob/sultan/donate/Ethereum_QR.png" width = 200>
                         </a><br/><b>0x0e5d110f39a66D3e0BDa72294360a8034B35D05F</b>
         </details>                
 </details>
