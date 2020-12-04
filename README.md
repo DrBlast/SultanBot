@@ -1,11 +1,11 @@
 # SultanBot
 
-[Инструкция на русском]()
+[Инструкция на русском](README_RUS.md)
 
 ## Installation
 1. Install last version of [AnkuLua](https://ankulua.boards.net/thread/1395/ankulua-trial-apk-download)
 2. Grant permissions for AnkuLua
-3. Download [archive]() with bot
+3. Download [archive](https://github.com/DrBlast/SultanBot/archive/sultan.zip   ) with bot
 4. Unzip archive to Ankulua folder on your phone
 5. Run AnluLua program
 6. Tap Select script
