@@ -35,4 +35,4 @@ When script ends, bot collects daily bonuses
 
 
 ## Donate
-If this project helped you, you can give me a cup of coffee 
+If this project helped you, you sponsor this project
