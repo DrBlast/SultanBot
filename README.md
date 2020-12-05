@@ -13,7 +13,7 @@
 7. Выбрать каталог _sultan_ и файл _RunBotRus.lua_
 8. Нажать кнопку Старт
 9. Запустить игру
-10. Зкрыть все уведомления игры
+10. Закрыть все уведомления игры
 11. Нажать кнопку Play
 
 <img src="https://github.com/DrBlast/SultanBot/raw/sultan/screenshots/StartDialog_RUS.jpg" height=600>
