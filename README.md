@@ -2,7 +2,7 @@
 
 [English instruction. English version not supported yet](README_ENG.md)
 
-## Installation
+## Установка
 1. Установить последнюю версию [AnkuLua](https://ankulua.boards.net/thread/1395/ankulua-trial-apk-download)
 2. При установке выдать запрашиваемые разрешения
 3. Скакчать архив с ботом [archive](https://github.com/DrBlast/SultanBot/archive/sultan.zip   ) with bot
@@ -18,7 +18,7 @@
 
 <img src="https://github.com/DrBlast/SultanBot/raw/sultan/screenshots/StartDialog_RUS.jpg" height=600>
 
-## Flags:
+## Возможные опции
 **Опыт** - собирает во дворце у Синана опыт, если флаг не отмечен - собираются ресурсы
 
 **Пазлы** - стреляет из пушки, крутит колесо, проводит одно сражение в Гвардейском полку, совершает 6 прогулок и визитов в гаремее для твинов уровня Vip 0. Может не работать при изменении иконки пазлов
@@ -42,7 +42,7 @@
 
 ###### По всем вопросам обращаться в [Telegram](https://t.me/DrBlast)
 
-## Donate
+## Поддержка проекта
 Если Вам понравился мой проект, Вы можете поддержать его развитие:
 
 <details>
