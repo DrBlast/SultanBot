@@ -4,7 +4,64 @@
 --- DateTime: 08.01.2020 23:47
 ---
 
-function showDlg(flag)
+function showDlgEng(flag)
+    toast("Not supported yet")
+    return
+    dialogInit()
+
+    addSeparator()
+    addTextView("")
+    newRow()
+    addCheckBox("isHarem", "Harem    \t", false)
+    addCheckBox("isCollectHeirs", "Heir      \t", false)
+    addCheckBox("isGadalka", "Divination\t", false)
+    newRow()
+    addCheckBox("isAcademy", "Academy\t", false)
+    addCheckBox("isFriends", "Friends\t", false)
+    addCheckBox("isWalking", "Masquerade\t", false)
+    newRow()
+    addCheckBox("isMinistery", "Council  \t", false)
+    addCheckBox("isSendToTrip", "Trip \t", false)
+    addEditNumber("sendToTrip",  0)
+    newRow()
+
+    newRow()
+    addSeparator()
+    addTextView("")
+    newRow()
+    addCheckBox("ordersExperience", "Exp\t", false)
+    addCheckBox("isRgmt", "Training Ground\t", false)
+    addCheckBox("isPuzzle", "Puzzles\t", false)
+    addCheckBox("stars", "Stars\t", false)
+    newRow()
+    addSeparator()
+    if (flag) then
+        addTextView("")
+        newRow()
+        addCheckBox("getGold", "Gold\t      ", false)
+        addSeparator()
+    end
+
+    addTextView("")
+    newRow()
+    addCheckBox("isContinueFight", "Arena - Continue fight \t", false)
+    newRow()
+    addTextView("   Arena bonus")
+    addRadioGroup("pointsIdx", 1)
+    addRadioButton("0", 0)
+    addRadioButton("1", 1)
+    addRadioButton("2", 2)
+    newRow()
+    addSeparator()
+    addTextView("")
+    addCheckBox("immersiveMode", "Immersive Mode\t", true)
+
+
+    dialogShow("Sultan Script v " .. version)
+    return true
+end
+
+function showDlgRus(flag)
     dialogInit()
 
     addSeparator()

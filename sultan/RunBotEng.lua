@@ -1,7 +1,7 @@
 localPath = scriptPath()
 require(localPath .. "settings")
 
-showDlg(false)
+showDlgEng(false)
 
 if (immersiveMode) then
     setImmersiveMode(true)

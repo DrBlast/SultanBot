@@ -1,44 +1,49 @@
 # SultanBot
 
-[Инструкция на русском](README_RUS.md)
+[English instruction. English version under development](README_ENG.md)
 
 ## Installation
-1. Install last version of [AnkuLua](https://ankulua.boards.net/thread/1395/ankulua-trial-apk-download)
-2. Grant permissions for AnkuLua
-3. Download [archive](https://github.com/DrBlast/SultanBot/archive/sultan.zip   ) with bot
-4. Unzip archive to Ankulua folder on your phone
-5. Run AnluLua program
-6. Tap Select script
-7. Open sultan bot folrder and select file runBot.lua
-8. Tap Start service
-9. Start game
+1. Установить последнюю версию [AnkuLua](https://ankulua.boards.net/thread/1395/ankulua-trial-apk-download)
+2. При установке выдать запрашиваемые разрешения
+3. Скакчать архив с ботом [archive](https://github.com/DrBlast/SultanBot/archive/sultan.zip   ) with bot
+4. Распаковать архив
+5. Переместить каталог _sultan_ в каталог Ankulua на вашем телефоне
+5. Запустить Ankulua
+6. Нажать кнопку Выбрать скрипт
+7. Выбрать каталог _sultan_ и файл _RunBotRus.lua_
+8. Нажать кнопку Старт
+9. Запустить игру
+10. Зкрыть все уведомления игры
+11. Нажать кнопку Play
+
+<img src="https://github.com/DrBlast/SultanBot/raw/sultan/screenshots/StartDialog_RUS.png">
 
 ## Flags:
-**Experience** - collect experience in Palace
+**Опыт** - собирает во дворце у Синана опыт, если флаг не отмечен - собираются ресурсы
 
-**Puzzles** - collect gun, wheel, go to guards regiment and make 6 walks, 6 visits in harem for twin accounts. May not work on new puzzles icon
+**Пазлы** - стреляет из пушки, крутит колесо, проводит одно сражение в Гвардейском полку, совершает 6 прогулок и визитов в гаремее для твинов уровня Vip 0. Может не работать при изменении иконки пазлов
 
-**Trip** - send heirs to trip in ministery
+**Trip** - отправляет наследников в путешествия в министерстве. Рекомендуется запускать раз в день.
 
-**Friends** - send vizirs to your friends in academy. Be sure that you have limit for 11 vizirs
+**Друзья** - отправляет советников в академию друзей. Работает при лимите 11 советников.
 
-**Stars** - play Star Stone Blessing minigame. You should start new game.
+**Stars** - собирает созвездия. Может работать некорректно при медленном соединении или при зависаниях игры. Перед запуском необходимо запустить новую игру созвездий
 
-**Regiment** - play guards regiment. You should start new battle
+**Полк** - Проходит гвардейский полк до завершения главы
 
-**Arena - continue fight**  - start new arena battle and set number of bonuses applied every move. Then start bot.
+**Арена - продолжить бой**  - Для запуска необходимо начать новый бой и выбрать количество бонус
 
-**Immersive Mode** - if bit not collect resouses try set it to opposite value
+**Immersive Mode** - Если сбор ресурсов не работает на вашей модели телефона, снимите отметку с чек-бокса
 
 
-When script ends, bot collects daily bonuses
+Когда скрипт завершается, собираются ежедневные бонусы 
 
 
 ## Donate
-If you like my work, you can sponsor this project:
+Если Вам понравился мой проект, Вы можете поддержать его развитие:
 
 <details>
-   <summary>Donation options</summary>
+   <summary>Варианты поддержки проекта:</summary>
         <details>
             <summary>PayPal</summary>
                 <a href="https://www.paypal.com/paypalme/enichegovskiy">
@@ -62,6 +67,7 @@ If you like my work, you can sponsor this project:
                         <a href="https://raw.githubusercontent.com/DrBlast/SultanBot/sultan/donate/eth.txt">
                         <img src="https://github.com/DrBlast/SultanBot/raw/sultan/donate/Ethereum_QR.png" width = 200>
                         </a><br/><b>0x0e5d110f39a66D3e0BDa72294360a8034B35D05F</b>
-        </details>                
+        </details>
+        Система быстрых платежей по телефону                
 </details>
 
