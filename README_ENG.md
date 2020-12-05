@@ -37,6 +37,7 @@
 
 When script ends, bot collects daily bonuses
 
+###### Collecting gold chests is available only in Paid Version
 
 ## Donate
 If you like my work, you can sponsor this project:

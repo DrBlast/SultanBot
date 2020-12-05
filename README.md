@@ -16,7 +16,7 @@
 10. Зкрыть все уведомления игры
 11. Нажать кнопку Play
 
-<img src="https://github.com/DrBlast/SultanBot/raw/sultan/screenshots/StartDialog_RUS.png">
+<img src="https://github.com/DrBlast/SultanBot/raw/sultan/screenshots/StartDialog_RUS.jpg" height=600>
 
 ## Flags:
 **Опыт** - собирает во дворце у Синана опыт, если флаг не отмечен - собираются ресурсы
@@ -37,6 +37,8 @@
 
 
 Когда скрипт завершается, собираются ежедневные бонусы 
+
+Ловля золотых сундуков доступна только в платной версии
 
 
 ## Donate
