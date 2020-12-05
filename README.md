@@ -1,6 +1,6 @@
 # SultanBot
 
-[English instruction. English version under development](README_ENG.md)
+[English instruction. English version not supported yet](README_ENG.md)
 
 ## Installation
 1. Установить последнюю версию [AnkuLua](https://ankulua.boards.net/thread/1395/ankulua-trial-apk-download)
