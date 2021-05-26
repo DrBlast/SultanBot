@@ -3,8 +3,74 @@
 --- Created by DrBlast.
 --- DateTime: 09.02.2020 22:39
 ---
+
+require(localPath .. "utils")
+require(localPath .. "sultanObjects")
+
 localPath = scriptPath()
+local chAccPath = "/change"
+local mainscr = Pattern("mainscr.png")
+local googleAcc = Pattern("google-acc.png")
+local account = Pattern("account.png")
+local addAccount = Pattern("addAccount.png")
+local delimiter = Pattern("delimiter.png")
+local exit = Pattern("exit.png")
+local changeAcc = Pattern("changeAcc.png")
+
+function closeNotifications()
+    setImagePath(localPath .. "image")
+    while (waitTimeoutOneOf(xx, xx2, RegQuaterRight, 1)) do
+        click(imgCC)
+    end
+    setImagePath(localPath .. "image" .. chAccPath)
+end
 
 function changeAcc()
+
+    backTo(account)
+    setImagePath(localPath .. "image" .. chAccPath)
+    existsClick(account, RegQuaterBottom, 0.1)
+    waitExistAndClick(exit, RegMiddle, 0.1)
+    waitTimeout(mainscr, RegQuaterUp, 0.1)
+    click(pCenter)
+
+    closeNotifications()
+
+    backTo(account)
+    waitExistAndClick(account, RegQuaterBottom, 0.1)
+    waitExistAndClick(changeAcc, RegMiddle, 0.1)
+
+    local xX1 = 0
+    local xX2 = 0
+    local yY1 = 0
+    local yY2 = 0
+    local xW = 0
+    local yH = 0
+    local allAccounts = findAll(delimiter)
+    for i, im in ipairs(allAccounts) do
+        im:highlight(1)
+        if (xX1 == 0) then
+            xX1 = im:getX()
+            yY1 = im:getY()
+            xW = im:getW()
+            yH = im:getH()
+        elseif (xX2 == 0) then
+            xX2 = im:getX()
+            yY2 = im:getY()
+        else
+            break
+        end
+    end
+
+    rH = yY2 - (yY1 + yH)
+    rW = xW
+
+    for i, im in ipairs(allAccounts) do
+        local xX = im:getX()
+        local yY = im:getY()
+        r = Region(xX1, yY + yH, rW, rH)
+        r:highlight(1)
+        r:save("a" .. i .. ".png")
+    end
 
 end

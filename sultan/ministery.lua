@@ -18,37 +18,41 @@ function getMinisters()
     if (getNotCollectedReg(ministery, RegScreen)) then
         wait(1)
         setImagePath(localPath .. "image" .. ministeryImagePath)
-        existsClick(ok, RegMiddle, 0.5)
+        click(topCenterPoint)
+        click(topCenterPoint)
+        waitTimeoutExistAndClick(ok, RegHalfBottom, 1, 0.2)
         collectIt()
-    --    trip(num)
-        x1 = 0
-        x2 = 0
-        y = 0
-        for i = 2, 8 do
+        if (not(findImage(cbxToAllSelected, RegHalfBottom)) or isSendToTrip) then
+            --    trip(num)
+            x1 = 0
+            x2 = 0
+            y = 0
+            for i = 2, 8 do
 
-            mImg = Pattern("m" .. i .. ".png")
-            if findImage(mImg, RegHalfBottom) then
-                click(image_Center)
-                wait(0.2)
-                if (i == 4) then
-                    x2 = image_Center:getX()
-                    y = image_Center:getY()
-                    p2 = Location(x2, y)
-                    p1 = Location(10, y)
-                    dragDrop(p2, p1)
-                    dragDrop(p2, p1)
+                mImg = Pattern("m" .. i .. ".png")
+                if findImage(mImg, RegHalfBottom) then
+                    click(image_Center)
+                    wait(0.2)
+                    if (i == 4) then
+                        x2 = image_Center:getX()
+                        y = image_Center:getY()
+                        p2 = Location(x2, y)
+                        p1 = Location(10, y)
+                        dragDrop(p2, p1)
+                        dragDrop(p2, p1)
 
-                end
-                collectIt()
-                if (i > 3) then
-                    trip(num - i)
+                    end
+                    collectIt()
+                    if (i > 3) then
+                        trip(num - i)
+                    else
+                        trip(num)
+                    end
                 else
-                    trip(num)
+                    break ;
                 end
-            else
-                break ;
-            end
 
+            end
         end
         setImagePath(localPath .. "image")
         wait(1)

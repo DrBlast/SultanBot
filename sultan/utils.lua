@@ -118,6 +118,30 @@ function waitOneOfExistAndClick(image1, image2, reg, timeAfter)
     end
 end
 
+function waitTimeoutOneOf(image1, image2, reg, timeout)
+    local found1 = false
+    local found2 = false
+    imgCC = false
+
+    while (not (findImage(image1, reg)) and not (findImage(image2, reg)) and timeout > 0) do
+        wait(0.1)
+        timeout = timeout - 0.3
+    end
+
+    usePreviousSnap(true)
+    if (findImage(image, reg)) then
+        found1 = true
+        imgCC = image_Center
+    end
+    if (not (found1) and findImage(image, reg)) then
+        found2 = true
+        imgCC = image_Center
+    end
+    usePreviousSnap(false)
+
+    return imgCC
+end
+
 function waitOneOf3ExistAndClick(image1, image2, image3, reg, timeAfter)
     while (not (existsClick(image1, reg, timeAfter))
             and not (existsClick(image2, reg, timeAfter))

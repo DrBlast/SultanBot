@@ -20,7 +20,7 @@ version = "1.0"
 screenX = screen:getX()
 screenY = screen:getY()
 
-print(" Размер экрана x", screenX, "y", screenY)
+print("Размер экрана x ", screenX, "y ", screenY)
 Settings:setCompareDimension(true, screenX)
 Settings:setScriptDimension(true, screenX)        -- Если разрешение экрана
 
@@ -33,7 +33,7 @@ CustomTimeToIdentify = 0.1
 
 imagePath = (localPath .. "image/")
 setImmersiveMode(true)
-autoGameArea(true)
+autoGameArea(false)
 -- Настройка dragDrop
 setDragDropStepCount(300)
 setDragDropTiming(150, 250)
@@ -44,7 +44,7 @@ Point_1 = Location(screenX / 2, screenY / 2)
 Point_2 = Location(screenX / 2 + 200, screenY / 2)
 Point_3 = Location(screenX / 2 + 300, screenY / 2)
 Point_4 = Location(screenX / 2, screenY / 2 + screenY / 4)
-
+topCenterPoint = Location(screenX / 2, screenY * 0.07)
 
 RegScreen = Region(0, 0, screenX, screenY)
 RegHalfUp = Region(0, 0, screenX, screenY / 2)

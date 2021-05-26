@@ -50,7 +50,12 @@ function sendToFriends()
 
     i = 0
 
-    while (i <= 11) do
+    if (findImage(avtoAddVizirs, RegHalfBottom)) then
+        usePreviousSnap(true)
+        existsClick(avtoAddVizirs, RegHalfBottom, 0.2)
+        click(Location(screenX * 0.05, screenY * 0.07))
+        usePreviousSnap(false)
+    else
         usePreviousSnap(true)
         if (findImage(selectFriend2, RegHalfUp)) then
             existsClick(selectFriend2, RegHalfUp, 0.1)
@@ -60,7 +65,7 @@ function sendToFriends()
         usePreviousSnap(false)
 
         j = 0
-        while (waitTimeoutExistAndClick(addPractice, RegHalfBottom, 1.1, 0.1) and i <= 11) do
+        while (waitTimeoutExistAndClick(addPractice, RegHalfBottom, 1.1, 0.1) and i <= 2) do
 
             if (waitTimeout(vizirs, RegHalfUp, 1.1)) then
                 selectVizir()
@@ -78,16 +83,6 @@ function sendToFriends()
         wait(0.1)
     end
 
-    --local img,c = findImage(countPractice, RegQuaterBottom)
-    --local xX = img:getX()
-    --local yY = img:getY()
-    --local xW = img:getW()
-    --local yH = img:getH()
-    --local r = Region(xX + xW, yY, xW / 2, yH)
-    --r:highlight(1)
-    --num = numberOCR(r, "v")
-    --toast(num)
-
 end
 
 function collectAcademy()
@@ -98,15 +93,15 @@ function collectAcademy()
     if (getNotCollectedReg(academyImg, RegScreen)) then
         wait(1)
         setImagePath(localPath .. "image" .. "/academy")
-        click(Location(screenX / 2, screenY / 8))
-        click(Location(screenX / 2, screenY / 8))
-        click(Location(screenX / 2, screenY / 8))
+        click(topCenterPoint)
+        click(topCenterPoint)
+        click(topCenterPoint)
         waitTimeoutExistAndClick(takeAway, RegHalfBottom, 0.7, 0.1)
         if (isFriends) then
             sendToFriends()
         end
         if (existsClick(autoComplete, RegQuaterBottom, 0.1)) then
-            click(Location(screenX / 2, screenY / 2))
+            click(pCenter)
             wait(0.5)
             existsClick(avtoAddVizirs, RegQuaterBottom, 0.1)
             existsClick(avtoAddVizirs, RegQuaterBottom, 0.1)
@@ -117,13 +112,12 @@ function collectAcademy()
                 click(Location(im:getCenter():getX(), im:getY() - im:getH()))
                 wait(0.3)
                 for j = 1, 5 do
-                    click(Location(screenX / 2, screenY / 4))
-                    click(Location(screenX / 2, screenY / 4))
+                    click(topCenterPoint)
                 end
             end
 
             usePreviousSnap(false)
-            click(Location(screenX / 2, screenY / 2))
+            click(topCenterPoint)
             while (waitTimeoutExistAndClick(addVizir, RegScreen, 0.7, 0.1)) do
                 if (waitTimeout(vizirs, RegHalfUp, 1.1)) then
                     selectVizir()

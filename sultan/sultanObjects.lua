@@ -49,11 +49,13 @@ ok = Pattern("ok.png")
 chance = Pattern("chance.png")
 cbxSendAll = Pattern("sendAll.png")
 cbxSendAllSelected = Pattern("sendAll-selected.png")
+cbxToAllSelected = Pattern("toAll.png")
 sendBtn = Pattern("sendBtn.png")
 startTrip = Pattern("sendToLearn.png")
 addMore = Pattern("add.png")
 confirmSend = Pattern("done.png")
 scroll = Pattern("scroll.png")
+
 ---
 academyImg = Pattern("academy.png")
 addVizir = Pattern("add.png")
@@ -93,6 +95,8 @@ renewWalk = Pattern("renew-walk.png")
 walk = Pattern("walk.png")
 autoWalk = Pattern("auto.png")
 energy = Pattern("energy.png")
+energy2 = Pattern("energy2.png")
+apply = Pattern("apply.png")
 ----
 arenaPath = "/arena"
 arena = Pattern("arena.png")

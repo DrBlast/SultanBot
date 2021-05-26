@@ -27,17 +27,17 @@ function goForAWalk()
     local y = screenY * 0.948
 
     local isRenew = false
-    if (findImage(energy, RegQuaterBottom)) then
+    if (findImage(energy, RegQuaterBottom) or findImage(energy2, RegQuaterBottom)) then
         isRenew = true
     end
 
     walking()
     if (isRenew and isPuzzle) then
-        while (not (findImage(newMoves, RegMiddle))) do
+        while (not (findImage(apply, RegMiddle))) do
             click(Location(x, y))
         end
         usePreviousSnap(true)
-        waitExistAndClick(newMoves, RegMiddle, 0.2)
+        waitExistAndClick(apply, RegMiddle, 0.2)
         usePreviousSnap(false)
         walking()
     end

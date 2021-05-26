@@ -65,11 +65,11 @@ function vizitPartners()
         end
     end
     if (not(autovisit) and isPuzzle) then
-        while (not (findImage(newMoves, RegMiddle))) do
+        while (not (findImage(apply, RegMiddle))) do
             click(Location(x, y))
         end
         usePreviousSnap(true)
-        waitExistAndClick(newMoves, RegMiddle, 0.1)
+        waitExistAndClick(apply, RegMiddle, 0.1)
         usePreviousSnap(false)
         while (not (findImage(renew, RegQuaterBottom))) do
             click(Location(x, y))
