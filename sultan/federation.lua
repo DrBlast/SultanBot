@@ -19,7 +19,7 @@ local approve = Pattern("approve.png.png")
 local nofedya = Pattern("nofedya.png")
 local fedyaPath = "/fedya"
 
-function getFedyaTasks()
+function sendFedyaTasks()
     setImagePath(localPath .. "image")
     while (not (findImage(fedya, RegScreen))) do
         dragDrop(Point_2, Point_1)

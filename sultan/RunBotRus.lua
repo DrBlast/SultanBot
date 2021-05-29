@@ -23,6 +23,9 @@ else
         collectGadalka()
         wait(1)
     end
+    if (isFedya) then
+        sendFedyaTasks()
+    end
     if (isMinistery) then
         getMinisters()
         wait(1)
