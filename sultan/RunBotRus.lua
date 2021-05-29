@@ -1,5 +1,6 @@
 localPath = scriptPath()
 require(localPath .. "settings")
+require(localPath .. "federation")
 
 showDlgRus(false)
 
