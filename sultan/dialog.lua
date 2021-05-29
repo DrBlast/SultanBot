@@ -20,7 +20,7 @@ function showDlgEng(flag)
     --addCheckBox("isFriends", "Friends\t", false)
     --addCheckBox("isWalking", "Masquerade\t", false)
     --newRow()
-    --addCheckBox("isMinistery", "Council  \t", false)
+    --addCheckBox("isMinistery", "Council    \t", false)
     --addCheckBox("isSendToTrip", "Trip \t", false)
     --addEditNumber("sendToTrip",  0)
     --newRow()
@@ -30,15 +30,16 @@ function showDlgEng(flag)
     --addTextView("")
     --newRow()
     --addCheckBox("ordersExperience", "Exp\t", false)
-    --addCheckBox("isRgmt", "Training Ground\t", false)
+    --addCheckBox("isRgmt", "Training\t", false)
     --addCheckBox("isPuzzle", "Puzzles\t", false)
     --addCheckBox("stars", "Stars\t", false)
     --newRow()
     --addSeparator()
-    --if (flag) then
+    --if (true) then
     --    addTextView("")
     --    newRow()
     --    addCheckBox("getGold", "Gold\t      ", false)
+    --    addCheckBox("isFedya", "Federation", false)
     --    addSeparator()
     --end
     --
@@ -55,7 +56,8 @@ function showDlgEng(flag)
     --addSeparator()
     --addTextView("")
     --addCheckBox("immersiveMode", "Immersive Mode\t", true)
-    --
+    --addCheckBox("isChangeAcc", "Change acc", false)
+    --addEditNumber("accNum", 1)
     --
     --dialogShow("Sultan Script v " .. version)
     --return true
@@ -77,7 +79,7 @@ function showDlgRus(flag)
     newRow()
     addCheckBox("isMinistery", "Послы  \t", false)
     addCheckBox("isSendToTrip", "Trip \t", false)
-    addEditNumber("sendToTrip",  0)
+    addEditNumber("sendToTrip", 0)
     newRow()
 
     newRow()
@@ -94,6 +96,12 @@ function showDlgRus(flag)
         addTextView("")
         newRow()
         addCheckBox("getGold", "Сундуки\t      ", false)
+        addCheckBox("isFedya", "Федерация", false)
+        addSeparator()
+    else
+        addTextView("")
+        newRow()
+        addCheckBox("isFedya", "Федерация", false)
         addSeparator()
     end
 
@@ -110,8 +118,8 @@ function showDlgRus(flag)
     addSeparator()
     addTextView("")
     addCheckBox("immersiveMode", "Immersive Mode\t", true)
-
-
+    addCheckBox("isChangeAcc", "Change acc", false)
+    addEditNumber("accNum", 1)
     dialogShow("Sultan Script v " .. version)
     return true
 end

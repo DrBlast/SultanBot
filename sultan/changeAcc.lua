@@ -14,63 +14,76 @@ local googleAcc = Pattern("google-acc.png")
 local account = Pattern("account.png")
 local addAccount = Pattern("addAccount.png")
 local delimiter = Pattern("delimiter.png")
-local exit = Pattern("exit.png")
+local exitAcc = Pattern("exit.png")
 local changeAcc = Pattern("changeAcc.png")
+
+function waitOneOfCloseBtn(image1, image2, reg, timeout)
+    imgCC = false
+
+
+    while (not (findImageLowSimilar(image1, reg)) and not (findImageLowSimilar(image2, reg)) and timeout > 0) do
+        wait(0.5)
+        timeout = timeout - 1
+    end
+
+    usePreviousSnap(true)
+    if (findImage(image1, reg)) then
+        imgCC = image_Center
+    elseif (findImage(image2, reg)) then
+        imgCC = image_Center
+    end
+    usePreviousSnap(false)
+
+    return imgCC
+end
 
 function closeNotifications()
     setImagePath(localPath .. "image")
-    while (waitTimeoutOneOf(xx, xx2, RegQuaterRight, 1)) do
+
+    while (waitOneOfCloseBtn(xx, xx2, RegRight, 3)) do
         click(imgCC)
     end
     setImagePath(localPath .. "image" .. chAccPath)
 end
 
-function changeAcc()
+function chooseAcc(accNum)
+    local point1 = Location(screenX / 2, screenY / 2 - screenY / 8)
+    local point2 = Location(screenX / 2, screenY / 2 + screenY / 8)
+    while (not(findImage(Pattern("acc".. accNum .. ".png"), RegScreen))) do
+        dragDrop(point2, point1)
+    end
+    usePreviousSnap(true)
+    existsClick(Pattern("acc".. accNum .. ".png"), RegScreen, 0.2)
+    usePreviousSnap(false)
+    waitTimeout(mainscr, RegQuaterUp, 3)
+    while (findImage(mainscr, RegQuaterUp)) do
+        click(pCenter)
+        wait(1)
+    end
+end
+
+function changeAccount(accNum)
 
     backTo(account)
     setImagePath(localPath .. "image" .. chAccPath)
     existsClick(account, RegQuaterBottom, 0.1)
-    waitExistAndClick(exit, RegMiddle, 0.1)
-    waitTimeout(mainscr, RegQuaterUp, 0.1)
-    click(pCenter)
-
-    closeNotifications()
-
-    backTo(account)
-    waitExistAndClick(account, RegQuaterBottom, 0.1)
     waitExistAndClick(changeAcc, RegMiddle, 0.1)
-
-    local xX1 = 0
-    local xX2 = 0
-    local yY1 = 0
-    local yY2 = 0
-    local xW = 0
-    local yH = 0
-    local allAccounts = findAll(delimiter)
-    for i, im in ipairs(allAccounts) do
-        im:highlight(1)
-        if (xX1 == 0) then
-            xX1 = im:getX()
-            yY1 = im:getY()
-            xW = im:getW()
-            yH = im:getH()
-        elseif (xX2 == 0) then
-            xX2 = im:getX()
-            yY2 = im:getY()
-        else
-            break
+    if (waitTimeout(exitAcc, RegScreen, 1)) then
+        waitExistAndClick(exitAcc, RegMiddle, 0.1)
+        waitTimeout(mainscr, RegQuaterUp, 3)
+        while (findImage(mainscr, RegQuaterUp)) do
+            click(pCenter)
+            wait(1)
         end
+        closeNotifications()
+        backTo(account)
+        waitExistAndClick(account, RegQuaterBottom, 0.1)
+        waitExistAndClick(changeAcc, RegMiddle, 0.1)
     end
 
-    rH = yY2 - (yY1 + yH)
-    rW = xW
-
-    for i, im in ipairs(allAccounts) do
-        local xX = im:getX()
-        local yY = im:getY()
-        r = Region(xX1, yY + yH, rW, rH)
-        r:highlight(1)
-        r:save("a" .. i .. ".png")
-    end
-
+    waitExistAndClick(googleAcc, RegScreen, 0.1)
+    wait(1)
+    chooseAcc(accNum)
+    wait(1)
+    closeNotifications()
 end

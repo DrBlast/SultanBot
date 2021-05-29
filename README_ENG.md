@@ -32,7 +32,7 @@
 
 **Arena - continue fight**  - start new arena battle and set number of bonuses applied every move. Then start bot.
 
-**Immersive Mode** - if bit not collect resouses try set it to opposite value
+**Immersive Mode** - if bot not collect resources try set it to opposite value
 
 
 When script ends, bot collects daily bonuses

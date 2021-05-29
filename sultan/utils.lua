@@ -129,12 +129,9 @@ function waitTimeoutOneOf(image1, image2, reg, timeout)
     end
 
     usePreviousSnap(true)
-    if (findImage(image, reg)) then
-        found1 = true
+    if (findImage(image1, reg)) then
         imgCC = image_Center
-    end
-    if (not (found1) and findImage(image, reg)) then
-        found2 = true
+    elseif (findImage(image2, reg)) then
         imgCC = image_Center
     end
     usePreviousSnap(false)
@@ -179,7 +176,6 @@ function waitTimeout(image, reg, timeout)
         found = true
     end
     usePreviousSnap(false)
-
     return found
 
 end

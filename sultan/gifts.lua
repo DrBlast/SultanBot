@@ -11,83 +11,99 @@ require(localPath .. "color")
 
 function collectGifts()
 
-    --img = RegQuaterBottom:exists(tasks:similar(0.99), 0.1)
-    --if (img) then
-    if (existsClick(tasks, RegQuaterBottom, 0.1)) then
-        while (findImage(gift, RegQuaterRight)) do
-            usePreviousSnap(true)
-            local gifts = findAll(gift)
-            local cnt = table.getn(gifts)
-            local img
-            for i, im in ipairs(gifts) do
-                img = im
-                break
-            end
-            for i = 1, cnt*2 do
-                click(img)
-            end
-            click(pCenter)
-            click(pCenter)
-            usePreviousSnap(false)
-        end
-        click(pCenter)
-        click(pCenter)
-        giftBonuses = findAll(chestPoint)
-        snapshotColor()
+    if (findImage(tasks, RegQuaterBottom)) then
         usePreviousSnap(true)
-
-        --13 57 30
-        --14 73 41
-        --205 78 41
-        --206 80 43
-        --277 77 43
-        --275 66 35
-        for i, m in ipairs(giftBonuses) do
-            local x = m:getX()
-            local y = m:getY()
-            local h = m:getH()
-            local w = m:getW()
-            local xC = m:getCenter():getX()
-            local c = xC - x
-            local r = Region(x - w, y - 1.5 * h, w + c, 1.5 * h)
-            local found = false
-            local willNotBeFound = false
-            for xX = x - w, x, 5 do
-                for yY = y - 1.5 * h, y, 5 do
-                    local tr, tg, tb = getColor(Location(xX, yY))
-
-                    local h, l, s = rgbToHsl(tr, tg, tb)
-                    if (h == 205 and l == 12 and s == 12) then
-                        willNotBeFound = true
-                        break
-                    end
-                    if (l > 40 and s > 29) then
-                        found = true
-                        click(r:getCenter())
-                        break
-                    end
-                end
-                if (found or willNotBeFound) then
+        local img, imgC = findImage(tasks, RegQuaterBottom)
+        local xX = img:getX()
+        local xW = img:getW()
+        local yY = img:getY()
+        local yH = img:getH()
+        local btnReg = Region(xX + xW, yY, xW, yH / 2)
+        isRedBtn = findImage(redBtn, btnReg)
+        usePreviousSnap(false)
+        if (isRedBtn) then
+            click(imgC)
+            wait(0.5)
+            while (findImage(gift, RegQuaterRight)) do
+                usePreviousSnap(true)
+                local gifts = findAll(gift)
+                local cnt = table.getn(gifts)
+                local img
+                for i, im in ipairs(gifts) do
+                    img = im
                     break
                 end
-            end
-            if (found) then
+                for i = 1, cnt * 2 do
+                    click(img)
+                end
                 click(pCenter)
-                wait(0.5)
                 click(pCenter)
-                wait(1)
+                usePreviousSnap(false)
             end
+            click(pCenter)
+            click(pCenter)
+            giftBonuses = findAll(chestPoint)
+            snapshotColor()
+            usePreviousSnap(true)
+
+            for i, m in ipairs(giftBonuses) do
+                local x = m:getX()
+                local y = m:getY()
+                local h = m:getH()
+                local w = m:getW()
+                local xC = m:getCenter():getX()
+                local c = xC - x
+                local r = Region(x - w, y - 1.5 * h, w + c, 1.5 * h)
+                local found = false
+                local willNotBeFound = false
+                for xX = x - w, x, 5 do
+                    for yY = y - 1.5 * h, y, 5 do
+                        local tr, tg, tb = getColor(Location(xX, yY))
+
+                        local h, l, s = rgbToHsl(tr, tg, tb)
+                        if (h == 205 and l == 12 and s == 12) then
+                            willNotBeFound = true
+                            break
+                        end
+                        if (l > 40 and s > 29) then
+                            found = true
+                            click(r:getCenter())
+                            break
+                        end
+                    end
+                    if (found or willNotBeFound) then
+                        break
+                    end
+                end
+                if (found) then
+                    click(pCenter)
+                    wait(0.5)
+                    click(pCenter)
+                    wait(1)
+                end
+            end
+            usePreviousSnap(false)
+            wait(2)
+            backTo(shop)
         end
-        usePreviousSnap(false)
-        wait(2)
-        backTo(shop)
     end
 
-    img2 = RegQuaterBottom:exists(achievements:similar(0.99), 0.1)
-    if (img2) then
-        existsClick(achievements, RegQuaterBottom, 0.1)
-        while (existsClick(bgift, RegScreen, 0.1)) do
-            wait(0.1)
+    if (findImage(achievements, RegQuaterBottom)) then
+        usePreviousSnap(true)
+        local img, imgC = findImage(achievements, RegQuaterBottom)
+        local xX = img:getX()
+        local xW = img:getW()
+        local yY = img:getY()
+        local yH = img:getH()
+        local btnReg = Region(xX + xW, yY, xW, yH / 2)
+        isRedBtn = findImage(redBtn, btnReg)
+        usePreviousSnap(false)
+        if (isRedBtn) then
+            click(imgC)
+            wait(0.5)
+            while (existsClick(bgift, RegScreen, 0.1)) do
+                wait(0.1)
+            end
         end
 
         backTo(shop)

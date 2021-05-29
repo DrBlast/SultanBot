@@ -37,6 +37,7 @@ achievements = Pattern("achievements.png")
 gift = Pattern("gift.png")
 bgift = Pattern("bgift.png")
 shop = Pattern("shop.png")
+redBtn = Pattern("redbtn.png")
 ---
 ministeryImagePath = "/ministery"
 ministery = Pattern("minitery.png")
@@ -168,4 +169,6 @@ line3 = Pattern("line3.png")
 kitchenPath = "/kitchen"
 trap = Pattern("trap.png")
 commonGame = Pattern("common.png")
+
+
 
