@@ -10,7 +10,7 @@
 5. Move _sultan_ folder to Ankulua folder on your phone
 5. Run AnluLua program
 6. Tap Select script
-7. Open sultan bot folder and select file _RunBotEng.lua_
+7. Open sultan bot folder and select file _RunBotEng.luac_
 8. Tap Start service
 9. Start game
 10. Tap Play button
