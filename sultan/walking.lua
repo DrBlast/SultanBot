@@ -8,7 +8,7 @@ require(localPath .. "utils")
 require(localPath .. "dialog")
 require(localPath .. "sultanObjects")
 
-function walking()
+function walking(x, y)
     while (not (findImage(renewWalk, RegQuaterBottom))) do
         click(Location(x, y))
         wait(0.1)
@@ -31,7 +31,7 @@ function goForAWalk()
         isRenew = true
     end
 
-    walking()
+    walking(x, y)
     if (isRenew and isPuzzle) then
         while (not (findImage(apply, RegMiddle))) do
             click(Location(x, y))
