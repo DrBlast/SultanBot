@@ -84,7 +84,7 @@ function collectGifts()
             end
             usePreviousSnap(false)
             wait(2)
-            backTo(shop)
+            backTo(tasks)
         end
     end
 
@@ -106,7 +106,7 @@ function collectGifts()
             end
         end
 
-        backTo(shop)
+        backTo(tasks)
     end
 
 end

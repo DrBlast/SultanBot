@@ -64,7 +64,7 @@ end
 
 function changeAccount(accNum)
 
-    backTo(account)
+    backTo(account, RegQuaterBottom)
     setImagePath(localPath .. "image" .. chAccPath)
     existsClick(account, RegQuaterBottom, 0.1)
     waitExistAndClick(changeAcc, RegMiddle, 0.1)

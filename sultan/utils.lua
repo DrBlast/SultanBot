@@ -78,6 +78,13 @@ function backTo(image)
     end
 end
 
+function backTo(image, reg)
+    while (not (findImage(image, reg))) do
+        clickBack()
+        wait(0.1)
+    end
+end
+
 function getNotCollectedReg(image, reg)
     if (findImage(image, reg)) then
         im1, c = findImage(image, reg)
