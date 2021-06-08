@@ -16,7 +16,7 @@
 10. Закрыть все уведомления игры
 11. Нажать кнопку Play
 
-<img src="https://github.com/DrBlast/SultanBot/raw/sultan/screenshots/StartDialogRUS2.jpg" height=600>
+<img src="https://github.com/DrBlast/SultanBot/raw/sultan/screenshots/StartDialogRus2.jpg" height=600>
 
 ## Возможные опции
 **Гарем** - посещение гарема
