@@ -5,7 +5,7 @@
 ## Установка
 1. Установить последнюю версию [AnkuLua](https://ankulua.boards.net/thread/1395/ankulua-trial-apk-download)
 2. При установке выдать запрашиваемые разрешения
-3. Скакчать архив с ботом [archive](https://github.com/DrBlast/SultanBot/archive/sultan.zip   ) with bot
+3. Скачать архив с ботом [archive](https://github.com/DrBlast/SultanBot/archive/sultan.zip   ) with bot
 4. Распаковать архив
 5. Переместить каталог _SultanBot-sultan/sultan_ в каталог Ankulua на вашем телефоне
 5. Запустить Ankulua
