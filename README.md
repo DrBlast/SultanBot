@@ -7,7 +7,7 @@
 2. При установке выдать запрашиваемые разрешения
 3. Запустить программу Ankulua (возможно будут запрошены дополнительные разрешения)
 4. Свернуть/закрыть программу   
-5. Скачать архив с ботом [archive](https://github.com/DrBlast/SultanBot/archive/sultan.zip   ) with bot
+5. Скачать архив с ботом [archive](https://github.com/DrBlast/SultanBot/archive/refs/heads/main.zip  ) with bot
 6. Запустить Ankulua
 7. Появится уведомление о том, что обраружен архив с запускаемым файлом
 5. Нажать ОК, затем в левом нижнем углу Unzip
@@ -21,7 +21,7 @@
 10. Закрыть все уведомления игры
 11. Нажать кнопку Play
 
-<img src="https://github.com/DrBlast/SultanBot/raw/sultan/screenshots/StartDialogRus2.jpg" height=600>
+<img src="https://github.com/DrBlast/SultanBot/raw/main/donate/screenshots/StartDialogRus2.jpg" height=600>
 
 ## Возможные опции
 **Гарем** - посещение гарема
@@ -81,25 +81,25 @@ _Перед завершением скрипта, собираются ежед
         <details>
             <summary>PayPal</summary>
                 <a href="https://www.paypal.com/paypalme/enichegovskiy">
-                <img src="https://github.com/DrBlast/SultanBot/raw/sultan/donate/PayPalMe.png" width = 200 alt="https://www.paypal.com/paypalme/enichegovskiy">
+                <img src="https://github.com/DrBlast/SultanBot/raw/main/donate/PayPalMe.png" width = 200 alt="https://www.paypal.com/paypalme/enichegovskiy">
                 </a>        
         </details>
         <details>
                     <summary>Waves</summary>
                         <a href="https://raw.githubusercontent.com/DrBlast/SultanBot/sultan/donate/waves.txt">
-                        <img src="https://github.com/DrBlast/SultanBot/raw/sultan/donate/Waves_QR.png" width = 200>
+                        <img src="https://github.com/DrBlast/SultanBot/raw/main/donate/Waves_QR.png" width = 200>
                         </a><br/><b>3PGrM7bxbNpxVYwanTDZbkggpztPTMkPAJ4</b>
         </details>
         <details>
                     <summary>BTC</summary>
-                        <a href="https://raw.githubusercontent.com/DrBlast/SultanBot/sultan/donate/btc.txt">
-                        <img src="https://github.com/DrBlast/SultanBot/raw/sultan/donate/Bitcoin_QR.png" width = 200>
+                        <a href="https://raw.githubusercontent.com/DrBlast/SultanBot/main/donate/btc.txt">
+                        <img src="https://github.com/DrBlast/SultanBot/raw/main/donate/Bitcoin_QR.png" width = 200>
                         </a><br/><b>19noFSCEni4gw1pSJKVohQaBsKHgVRXhDb</b>
         </details>
         <details>
                     <summary>ETH</summary>
-                        <a href="https://raw.githubusercontent.com/DrBlast/SultanBot/sultan/donate/eth.txt">
-                        <img src="https://github.com/DrBlast/SultanBot/raw/sultan/donate/Ethereum_QR.png" width = 200>
+                        <a href="https://raw.githubusercontent.com/DrBlast/SultanBot/main/donate/eth.txt">
+                        <img src="https://github.com/DrBlast/SultanBot/raw/main/donate/Ethereum_QR.png" width = 200>
                         </a><br/><b>0x0e5d110f39a66D3e0BDa72294360a8034B35D05F</b>
         </details>
         Система быстрых платежей по телефону                
